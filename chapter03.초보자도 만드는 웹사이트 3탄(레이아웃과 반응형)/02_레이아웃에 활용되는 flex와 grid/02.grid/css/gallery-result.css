@@ -1,0 +1,31 @@
+* {
+   box-sizing: border-box;
+}
+
+body {
+   background-color: #eee;
+   font-size: 16px;
+}
+
+.wrapper {
+   display: grid;
+   /* 화면을 꽉 채울만큼 칼럼 너비를 늘려서 표시 */
+   /* 최소 컬럼 너비 320px ~ 1fr (화면사이즈가 늘어나도 1:1 비율 유지) */
+   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+   /* 컬럼, 행 모두 gap 1rem */
+   grid-gap: 1rem; /* 16px */
+}
+
+.card {
+   padding: 5px;
+   background-color: #fff;
+   box-shadow: 0px 1px 5px #222;
+}
+.card header {
+   font-size: 1.5rem;
+   padding: 0.5rem;
+}
+.card img {
+   width: 100%;
+}

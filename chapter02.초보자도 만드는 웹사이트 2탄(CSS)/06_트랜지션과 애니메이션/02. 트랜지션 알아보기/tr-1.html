@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <style>
+         .box {
+            margin: 20px auto;
+            width: 100px;
+            height: 100px;
+            background-color: #07f;
+            border: 1px solid #222;
+            /* 트랜지션 대상(속성명) - width, height */
+            transition-property: width, height;
+
+            /* 트랜지션 적용 시간 (transition-property와 갯수, 순서를 맞춰준다) */
+            /* width는 2초 동안 바꿈, height는 1초 동안 바꿈 */
+            transition-duration: 2s, 1s;
+         }
+
+         .box:hover {
+            width: 200px;
+            height: 120;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="box"></div>
+   </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <style>
+         .container {
+            width: 80%;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            background-color: #eee;
+            border: 1px solid #222;
+            margin-bottom: 20px;
+         }
+
+         .box {
+            height: 60px;
+            margin: 5px;
+            background-color: #222;
+         }
+         p {
+            color: #fff;
+            text-align: center;
+         }
+
+         /* 뷰포트의 너비가 늘어나도 flex item들이 일정한 비율을 유지한다 */
+         .grow-1 {
+            /* 1배 */
+            flex-grow: 1;
+         }
+         .grow-2 {
+            /* 2배 */
+            flex-grow: 2;
+         }
+         .grow-3 {
+            /* 3배 */
+            flex-grow: 3;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container">
+         <div class="box grow-1"><p>1</p></div>
+         <div class="box grow-2"><p>2</p></div>
+         <div class="box grow-3"><p>3</p></div>
+      </div>
+   </body>
+</html>

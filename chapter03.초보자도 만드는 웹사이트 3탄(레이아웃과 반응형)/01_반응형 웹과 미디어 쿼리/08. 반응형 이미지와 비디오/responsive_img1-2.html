@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <style>
+         body,
+         html,
+         h1 {
+            margin: 0;
+            padding: 0;
+         }
+         div {
+            margin: 0 auto;
+            width: 700px;
+            height: 500px;
+            background: rosybrown;
+         }
+         .img1 {
+            display: block;
+            /* 이미지 태그에 margin을 주기 위해 사용, width는 이미지가 기본적으로 가진 속성이므로 block으로 바꾸지 않아도 적용가능 */
+
+            width: 500px;
+            margin: 0 auto;
+         }
+
+         /* 0 ~ 767px */
+         @media all and (max-width: 767px) {
+            div {
+               width: 100%;
+            }
+
+            .img1 {
+               width: 100%;
+               height: auto;
+            }
+         }
+      </style>
+   </head>
+   <body>
+      <div>
+         <h1>CHEER UP!</h1>
+         <img src="../images/lime.jpg" alt="라임" class="img1" />
+      </div>
+   </body>
+</html>

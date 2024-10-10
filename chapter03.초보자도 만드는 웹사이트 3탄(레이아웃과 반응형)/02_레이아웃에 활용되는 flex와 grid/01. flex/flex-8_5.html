@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <style>
+         .container {
+            background-color: #eee;
+            border: 1px solid #222;
+            display: flex;
+            align-items: center;
+            width: 80%;
+            height: 150px;
+            margin-bottom: 20px;
+         }
+         .box {
+            width: 60px;
+            height: 60px;
+            margin: 5px;
+            background-color: #222;
+         }
+         p {
+            color: #fff;
+            text-align: center;
+         }
+         #box1 {
+            /* flex-grow : 1; */
+            flex: 1;
+         }
+         #box2 {
+            /* 기본 디폴트 너비 */
+            /*  flex-basis: 30px */
+            flex: 0 1 30px;
+         }
+         #box3 {
+            /* flex-grow : 2; */
+            /* flex-shrink: 2; */
+            flex: 2 2;
+         }
+         #box4 {
+            /* flex-grow : 1; */
+            /* flex-shrink: 40; */
+            flex: 1 40px;
+         }
+         #box5 {
+            /* flex-grow: 2;
+            flex-shrink: 2;
+            flex-basis: 0; */
+            flex: 2 2 0;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container">
+         <div id="box1" class="box"><p>1</p></div>
+         <div id="box2" class="box"><p>2</p></div>
+         <div id="box3" class="box"><p>3</p></div>
+         <div id="box4" class="box"><p>4</p></div>
+         <div id="box5" class="box"><p>5</p></div>
+      </div>
+   </body>
+</html>

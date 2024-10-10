@@ -1,0 +1,15 @@
+#container {
+   width: 600px;
+   margin: 0 auto;
+   border: 1px solid #111;
+   padding: 10px;
+   box-sizing: border-box;
+}
+table {
+   border-collapse: collapse;
+}
+table td,
+table th {
+   border: 1px solid #ddd;
+   padding: 10px 20px;
+}

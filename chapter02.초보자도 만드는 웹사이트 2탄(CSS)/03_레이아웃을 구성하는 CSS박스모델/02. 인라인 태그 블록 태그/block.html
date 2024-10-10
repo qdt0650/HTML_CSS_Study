@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <style>
+         /* * : body 안에 있는 모든 태그를 선택 */
+         body * {
+            border: 1px solid blue;
+         }
+         .accent {
+            color: red;
+            font-weight: bold;
+         }
+      </style>
+   </head>
+   <body>
+      <!-- 블록태그: width를 100% 차지하기 때문에 블록처럼 쌓인다, height는 콘텐츠 크기 만큼 차지한다 -->
+      <h1>시간이란</h1>
+      <div>
+         내일 죽을 것처럼
+         <p class="accent">오늘</p>
+         을 살고
+      </div>
+      <p>
+         영원히 살 것처럼 <br />
+         내일을 꿈꾸어라
+      </p>
+   </body>
+</html>

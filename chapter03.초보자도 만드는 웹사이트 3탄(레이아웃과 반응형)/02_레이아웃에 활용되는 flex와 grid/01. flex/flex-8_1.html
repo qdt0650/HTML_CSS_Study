@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <style>
+         .container {
+            width: 80%;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            background-color: #eee;
+            border: 1px solid #222;
+            margin-bottom: 20px;
+         }
+
+         .box {
+            height: 60px;
+            margin: 5px;
+            background-color: #222;
+         }
+         p {
+            color: #fff;
+            text-align: center;
+         }
+         /* flex item의 기본 크기를 지정 -> 가변 그리드 공식을 직접 계산하지 않아도 알아서 비율을 조절 */
+         .basis-1 {
+            flex-basis: 100px;
+         }
+         .basis-2 {
+            flex-basis: 500px;
+         }
+         .basis-3 {
+            flex-basis: 0;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container">
+         <div class="box basis-1"><p>1</p></div>
+         <div class="box basis-2"><p>2</p></div>
+         <div class="box basis-3"><p>3</p></div>
+      </div>
+   </body>
+</html>

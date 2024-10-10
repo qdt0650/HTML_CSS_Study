@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="kp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * { margin:0; padding:0; }
+
+        html, body {
+            height: 100%;
+        }
+
+        #wrap {
+            width: 960px;
+            /* height와 같이 min-height, max-height를 사용해 최소, 최대 높이 제한 */
+			height: 100%;
+            max-height: 500px;
+            /* min-height: 500px; 뷰포트가 줄어들어도 최소 500px 보다 작아지지 X */
+            /* max-height: 500px; 뷰포트가 커져도 최대 500px 보다 커지지 X */
+			background: skyblue;
+			margin: 0 auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrap"></div>
+</body>
+</html>

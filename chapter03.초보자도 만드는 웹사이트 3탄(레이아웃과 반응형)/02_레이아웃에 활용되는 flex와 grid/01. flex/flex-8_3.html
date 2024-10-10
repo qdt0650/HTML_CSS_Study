@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <style>
+         .container {
+            width: 80%;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            background-color: #eee;
+            border: 1px solid #222;
+            margin-bottom: 20px;
+         }
+
+         .box {
+            width: 200px;
+            height: 60px;
+            margin: 5px;
+            background-color: #222;
+         }
+         p {
+            color: #fff;
+            text-align: center;
+         }
+
+         /* 뷰포트의 너비가 줄어들 때 flex item들이 지정한 비율로 줄어든다 */
+         .shrink-1 {
+            flex-shrink: 1;
+         }
+         .shrink-2 {
+            flex-shrink: 2;
+         }
+         .shrink-3 {
+            flex-shrink: 3;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container">
+         <div class="box shrink-1"><p>1</p></div>
+         <div class="box shrink-2"><p>2</p></div>
+         <div class="box shrink-3"><p>3</p></div>
+      </div>
+   </body>
+</html>

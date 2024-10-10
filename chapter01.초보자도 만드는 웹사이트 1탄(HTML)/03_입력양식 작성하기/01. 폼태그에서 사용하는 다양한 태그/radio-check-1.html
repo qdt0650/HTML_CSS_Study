@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <form action=".">
+         <fieldset>
+            <legend>상품선택</legend>
+            <p><b>주문할 상품을 선택해 주세요.</b></p>
+            <input type="checkbox" value="s_3" name="box" checked /> 선물용 3kg <input type="checkbox" value="s_5" name="box" /> 선물용 5kg <input type="checkbox" value="f_3" name="box" /> 가정용 3kg <input type="checkbox" value="f_3" name="box" /> 가정용 5kg
+
+            <p><b>포장선택</b></p>
+            <input type="radio" value="yes" name="gift" checked /> 선물포장 <input type="radio" value="no" name="gift" /> 선물 포장 안함
+         </fieldset>
+         <fieldset>
+            <legend>배송정보</legend>
+            <ul>
+               <li>
+                  <label for="user-name">이름</label>
+                  <input type="text" id="user-name" name="user-name" />
+               </li>
+               <li>
+                  <label for="addr">배송주소</label>
+                  <input type="text" id="addr" name="addr" />
+               </li>
+               <li>
+                  <label for="email">이메일</label>
+                  <input type="email" id="email" name="email" />
+               </li>
+               <li>
+                  <label for="phone">연락처</label>
+                  <input type="tel" id="phone" name="phone" />
+               </li>
+               <li>
+                  <input type="submit" value="주문" />
+                  <input type="reset" value="취소" />
+               </li>
+            </ul>
+         </fieldset>
+      </form>
+   </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <form action=".">
+         <label for="user_id">아이디</label>
+         <input type="text" id="user_id" name="user_id" />
+
+         <label for="user_pw">패스워드</label>
+         <input type="password" id="user_pw" name="user_pw" />
+
+         <!-- submit 버튼과 같은 기능 (서버로 데이터 전송) -->
+         <input type="image" src="./images/login.png" alt="로그인" />
+         <!-- <input type="submit" value="로그인" /> -->
+         <button type="submit">로그인</button>
+
+         <input type="reset" value="초기화" />
+         <button type="reset">초기화</button>
+
+         <hr />
+
+         <!-- 사용자가 입력한 내용을 서버에 전송하지 않는 일반 버튼 -->
+         <!-- submit 기능외에 다른 용도로 버튼을 사용할때 -->
+         <input type="button" value="공지보기(input)" onclick="window.open('./datetime.html')" />
+         <button type="button" onclick="window.open('./datetime.html')">공지보기(버튼)</button>
+
+         <hr />
+
+         <!-- 사용가능 -->
+         <a href="https://www.naver.com">
+            <img src="./images/login.png" alt="로그인" />
+         </a>
+      </form>
+   </body>
+</html>

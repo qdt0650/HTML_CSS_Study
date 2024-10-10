@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <style>
+         /* id 선택자 : 하나의 요소에 하나의 스타일을 적용, 이름 중복 x, 여러개의 이름 사용 x */
+         #bg1 {
+            color: red;
+            font-style: italic; /* 기울임꼴 */
+         }
+
+         #bg2 {
+            color: red;
+            font-style: italic;
+         }
+
+         /* 클래스를 사용하는 이유 : 여러개의 요소에 한꺼번에 스타일을 적용하기 위해, 이름 중복 가능, 여러개의 이름 사용가능 */
+         .bg {
+            color: red;
+            font-style: italic;
+         }
+         .accent {
+            border: 1px solid black;
+         }
+      </style>
+   </head>
+   <body>
+      <div>
+         <h1>레드향</h1>
+         <p>껍질에 붉은 빛이 돌아 <span class="bg accent">레드향</span>이라 불린다.</p>
+         <p><span class="bg accent">레드향</span>은 한라봉과 귤을 교배한 것으로 일반 귤보다 2~3배 크고, 과육이 붉고 통통하다.</p>
+         <p><span class="accent">비타민 C</span>와 비타민 P가 풍부해 혈액순환, 감기예방 등에 좋은 것으로 알려져 있다.</p>
+      </div>
+   </body>
+</html>

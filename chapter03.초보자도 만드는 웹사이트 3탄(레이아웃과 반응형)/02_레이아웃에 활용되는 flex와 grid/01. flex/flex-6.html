@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <style>
+         .container {
+            background-color: #eee;
+            border: 1px solid #222;
+            margin-bottom: 20px;
+            display: flex;
+            width: 450px;
+            height: 150px;
+            align-items: center;
+         }
+         .box {
+            padding: 5px 45px;
+            margin: 5px;
+            background-color: #222;
+         }
+         p {
+            color: #fff;
+            text-align: center;
+         }
+
+         /* align-items로 먼저 전체 정렬을 한 후에 align-self로 각각 다르게 정렬한다. */
+         /* align-self의 속성값은 align-items의 속성 값과 동일 */
+         #box1 {
+            align-self: flex-start;
+         }
+         #box2 {
+            align-self: stretch;
+         }
+      </style>
+   </head>
+   <body>
+      <div id="opt1" class="container">
+         <div id="box1" class="box"><p>1</p></div>
+         <div class="box"><p>2</p></div>
+         <div id="box3" class="box"><p>3</p></div>
+         <div class="box"><p>4</p></div>
+      </div>
+   </body>
+</html>

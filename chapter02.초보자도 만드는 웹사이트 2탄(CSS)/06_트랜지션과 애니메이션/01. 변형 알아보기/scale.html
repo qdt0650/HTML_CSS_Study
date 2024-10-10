@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <style>
+         #container {
+            width: 800px;
+            height: 200px;
+            margin: 20px auto;
+         }
+         .origin {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            float: left;
+            margin: 40px;
+         }
+         .origin > div {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+         }
+         #scalex:hover {
+            /* 2배 확대 */
+            transform: scaleX(2);
+         }
+         #scaley:hover {
+            /* y축으로 1.5배 확대 */
+            transform: scaleY(1.5);
+         }
+         #scalexy:hover {
+            /* 1보다 작으면 축소, 1보다 크면 확대 */
+            /* x축으로 0.7배, y축으로 0.7배 축소 */
+            /* transform: scale(0.7, 0.7); */
+
+            /* x, y같은 수치로 확대축소시 값을 하나만 줘도 된다 */
+            transform: scale(0.7);
+         }
+      </style>
+   </head>
+   <body>
+      <div id="container">
+         <div class="origin">
+            <div id="scalex"></div>
+         </div>
+         <div class="origin">
+            <div id="scaley"></div>
+         </div>
+         <div class="origin">
+            <div id="scalexy"></div>
+         </div>
+      </div>
+   </body>
+</html>

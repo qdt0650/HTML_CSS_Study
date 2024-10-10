@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <!-- form : 서버로 데이터를 보낼 때 택배상자와 비슷한 영할 -->
+      <!-- action : 데이터를 보낼 서버의 주소(택배에서 받는 사람 주소) -->
+      <!-- method : 어떤 방식으로 데이터를 보낼 것인지(택배 착불 or 선불) -->
+      <form action="./login" method="post">
+         <!-- label : 입력양식 태그의 설명을 위한 태그, 웹접근성 때문에 반드시 입력양식 태그와 같이 사용 -->
+         <!-- id 속성 : 요소를 구분하기 위해 쓰는 속성(회원가입할때 id의 역할과 비슷), 중복 속성값 x , 속성값은 자유롭게 짓는다. -->
+         <label for="user_id">아이디 :</label>
+         <input type="text" id="user_id" size="10" />
+
+         <label for="user_pw">비밀번호 :</label>
+         <input type="password" id="user_pw" size="10" />
+
+         <!-- submit 서버에 데이터를 보내는 버튼 -->
+         <input type="submit" value="로그인" />
+
+         <!-- from 태그 내부에 있는 입력양식 태그의 모든 내용을 지워준다. -->
+         <input type="reset" value="취소" />
+      </form>
+   </body>
+</html>

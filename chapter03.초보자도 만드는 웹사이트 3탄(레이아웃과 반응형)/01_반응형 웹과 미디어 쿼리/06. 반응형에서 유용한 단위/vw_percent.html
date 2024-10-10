@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <style>
+         .parent {
+            width: 600px;
+            height: 300px;
+            background: skyblue;
+         }
+         .child1 {
+            /* % : 부모태그를 기준  */
+            width: 50%;
+            height: 300px;
+            background: salmon;
+         }
+         .child2 {
+            /* vw, vh : 뷰포트를 기준 */
+            width: 50vw;
+            height: 300px;
+            background: salmon;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="parent">
+         <div class="child1"></div>
+      </div>
+      <br />
+      <div class="parent">
+         <div class="child2"></div>
+      </div>
+   </body>
+</html>

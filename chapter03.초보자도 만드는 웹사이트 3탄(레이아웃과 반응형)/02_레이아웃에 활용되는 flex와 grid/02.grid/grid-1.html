@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <style>
+         #wrapper {
+            display: grid;
+
+            /* 너비 200px , 컬럼 3개 */
+            grid-template-columns: 200px 200px 200px;
+
+            /* 행 높이 100px */
+            grid-template-rows: 100px;
+         }
+
+         .items {
+            padding: 10px;
+            background-color: #eee;
+         }
+         .items:nth-child(n) {
+            background-color: #bbb;
+         }
+      </style>
+   </head>
+   <body>
+      <div id="wrapper">
+         <div class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, reprehenderit.Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+         <div class="items">Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit</div>
+         <div class="items">Lorem ipsum dolor sit amet.Lorem ipsum dolor, sit amet consectetur adipisicing elit</div>
+         <div class="items">Lorem ipsum dolor sit.Lorem ipsum dolor, sit amet consectetur adipisicing elit</div>
+         <div class="items">Lorem, ipsum dolor.</div>
+      </div>
+   </body>
+</html>

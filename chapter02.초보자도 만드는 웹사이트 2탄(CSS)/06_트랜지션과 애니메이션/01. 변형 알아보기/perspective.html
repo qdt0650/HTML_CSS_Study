@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <style>
+         body {
+            background: url('../images/xyz.png') no-repeat center/contain fixed;
+         }
+         .origin {
+            width: 152px;
+            height: 180px;
+            border: 1px solid black;
+            margin: 30px;
+            float: left;
+         }
+         .origin > div {
+            width: 152px;
+            height: 180px;
+         }
+         .rotatex:hover {
+            /* x축으로 50도 회전 */
+            transform: rotateX(50deg);
+         }
+         #pers {
+            /* 원근감 : transform을 적용한 부모 요소에 적용할 것 */
+            perspective: 300px;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="origin">
+         <div class="rotatex">
+            <img src="../images/sunset.jpg" alt="노을" />
+         </div>
+      </div>
+      <div id="pers" class="origin">
+         <div class="rotatex">
+            <img src="../images/sunset.jpg" alt="노을" />
+         </div>
+      </div>
+   </body>
+</html>

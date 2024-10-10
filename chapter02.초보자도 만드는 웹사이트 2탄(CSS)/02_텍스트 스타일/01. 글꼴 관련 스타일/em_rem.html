@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <style>
+         html {
+            font-size: 30px; /*문서 전체의 폰트사이즈 30px*/
+         }
+
+         #content {
+            font-size: 10px;
+         }
+
+         .para1 {
+            /* rem, em 폰트 사이즈의 n배 */
+            /* em : 부모태그의 폰트사이즈를 기준으로 n배 */
+            /* rem : html 문서의 폰트사이즈를 기준으로 n배 */
+            font-size: 2em; /* 20px */
+            font-size: 2rem; /* 60px */
+         }
+         .para2 {
+            font-size: 1rem; /* 30px */
+         }
+         .para3 {
+            font-size: 2rem; /* 60px */
+
+            /* para3의 부모태그는 <body>, <body>는 <html>의 영향을 받고 있으므로 기본 font-size는 30px. 따라서 <body>의 자식태그인 <p class="para3"> 요소의 font-size:2em은 60px */
+            font-size: 2em;
+         }
+      </style>
+   </head>
+   <body>
+      <div id="content">
+         <p class="para1">1. lorem</p>
+      </div>
+      <p class="para2">2. lorem</p>
+      <p class="para3">3. lorem</p>
+   </body>
+</html>

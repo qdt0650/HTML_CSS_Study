@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <form action=".">
+         <!-- 파일첨부 -->
+         <label for="upload-file">파일첨부 :</label>
+         <input type="file" id="upload-file" name="upload-file" />
+
+         <!-- 숨겨진 값 -->
+         <!-- 사용자에게 보여주면 안되지만 서버에 value 값을 넘겨줘야 할 때 사용 -->
+         <input type="hidden" name="login_YN" value="Y" />
+
+         <hr />
+         <input type="submit" value="파일업로드" />
+      </form>
+   </body>
+</html>
